@@ -10,7 +10,7 @@ if [ "$(uname)" = "Darwin" ]; then
   DOWNLOAD_URL=https://download.qt.io/archive/qt/$(echo ${QT_VERSION} | cut -d "." -f -2)/${QT_VERSION}/qt-opensource-mac-x64-${QT_VERSION}.dmg
   COMPILER=clang_64
 elif [ "$(uname)" = "Linux" ]; then
-  DOWNLOAD_URL=https://download.qt.io/archive/qt/$(echo ${QT_VERSION} | cut -d "." -f -2)/${QT_VERSION}/qt-opensource-linux-x64-${QT_VERSION}.run
+  DOWNLOAD_URL=https://download.qt.io/new_archive/qt/$(echo ${QT_VERSION} | cut -d "." -f -2)/${QT_VERSION}/qt-opensource-linux-x64-${QT_VERSION}.run
   COMPILER=gcc_64
 else
   echo "Unsupported system." >&2
