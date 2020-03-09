@@ -15,6 +15,7 @@ matrix:
     script:
         - ENV_FILE=qt-5.9.5-android-19.env
         - export WORKDIR=$PWD
+        - export VERBOSE=1
         - echo $PWD
         - source path.env
         - wget -c https://download.qt.io/official_releases/online_installers/qt-unified-linux-x64-online.run
